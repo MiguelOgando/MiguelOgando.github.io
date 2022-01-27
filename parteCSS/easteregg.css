@@ -1,0 +1,13 @@
+body {
+    background-image: url("../Imágenes/easteregg/4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.separacion {
+    padding-top: 40%;
+    padding-bottom: 40%;
+}
+.separacionsub {
+    padding: 100px;
+}
