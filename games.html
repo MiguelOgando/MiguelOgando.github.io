@@ -1,426 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./parteCSS/juegos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrácticaBootstrap</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./parteCSS/juegos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrácticaBootstrap</title>
 </head>
+
 <body class="bg-black">
-    <div class="container-fluid p-5 bg-dark text-white text-center">
-      <h1>TOP JUEGOS</h1>
-      <h4>OcioTime</h4>
+  <div class="container-fluid p-5 bg-dark text-white text-center">
+    <h1>TOP JUEGOS</h1>
+    <h4>OcioTime</h4>
   </div>
   <img src="./Imágenes/aboutMe/reemplazo1.gif" alt="portada" class="img-fluid">
   <nav class="navbar bg-dark sticky-top">
     <div class="container mt-0 justify-content-center">
-        <div class="btn-group">
-          <button type="button" class="btn btn-dark"><a class="text-reset text-decoration-none" href="./index.html">Launcher</a></button>
-          <button type="button" class="btn btn-dark"><a class="text-reset text-decoration-none" href="./games.html">Juegos</a></button>
-          <button type="button" class="btn btn-dark"><a class="text-reset text-decoration-none" href="./aboutMe.html">About me</a></button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-dark"><a class="text-reset text-decoration-none"
+            href="./index.html">Launcher</a></button>
+        <button type="button" class="btn btn-dark"><a class="text-reset text-decoration-none"
+            href="./games.html">Juegos</a></button>
+        <button type="button" class="btn btn-dark"><a class="text-reset text-decoration-none"
+            href="./aboutMe.html">About me</a></button>
+      </div>
+    </div>
+  </nav>
+  <div class="d-flex justify-content-around bg-black espacio text-white">
+    <!-- Carousel -->
+    <div id="demo0" class="tamaño carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo0" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo0" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo0" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=spanish"
+            target="_blank"><img src="./Imágenes/juegos/CSGO.png" alt="CSGO" class="d-block tamaño"></a>
         </div>
-    </div>
-</nav>
-<div class="d-flex justify-content-around bg-black espacio text-white">
-<!-- Carousel -->
-<div id="demo0" class="tamaño carousel slide" data-bs-ride="carousel">
+        <div class="carousel-item">
+          <a href="https://store.steampowered.com/app/550/Left_4_Dead_2/" target="_blank"><img
+              src="./Imágenes/juegos/l4dead.png" alt="Left 4 dead" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://store.steampowered.com/bundle/237/HalfLife_1_Anthology/" target="_blank"><img
+              src="./Imágenes/juegos/jalife.png" alt="Half Life" class="d-block tamaño"></a>
+        </div>
+      </div>
 
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo0" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo0" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo0" data-bs-slide-to="2"></button>
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo0" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo0" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-    
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=spanish" target="_blank"><img src="./Imágenes/juegos/CSGO.png" alt="CSGO" class="d-block tamaño"></a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://store.steampowered.com/app/550/Left_4_Dead_2/" target="_blank"><img src="./Imágenes/juegos/l4dead.png" alt="Left 4 dead" class="d-block tamaño"></a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://store.steampowered.com/bundle/237/HalfLife_1_Anthology/" target="_blank"><img src="./Imágenes/juegos/jalife.png" alt="Half Life" class="d-block tamaño"></a>
-      </div>
+
+    <div class="container-fluid mt-3">
+      <h3>Steam</h3>
     </div>
-    
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo0" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo0" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
+
+    <!-- Carousel -->
+    <div id="demo1" class="tamaño carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://www.epicgames.com/store/es-ES/p/fortnite" target="_blank"><img
+              src="./Imágenes/juegos/fonite.png" alt="Fortnite" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.xbox.com/es-ES/games/gears-of-war-4" target="_blank"><img
+              src="./Imágenes/juegos/gearsofwar.png" alt="Gears of War" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.epicgames.com/store/es-ES/p/rocket-league" target="_blank"><img
+              src="./Imágenes/juegos/rocketleague.png" alt="Rocket League" class="d-block tamaño"></a>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <h3>Epic Games</h3>
+    </div>
   </div>
-  
-  <div class="container-fluid mt-3">
-    <h3>Steam</h3>
-  </div>
-
-  <!-- Carousel -->
-<div id="demo1" class="tamaño carousel slide" data-bs-ride="carousel">
-
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
-    </div>
-    
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="https://www.epicgames.com/store/es-ES/p/fortnite" target="_blank"><img src="./Imágenes/juegos/fonite.png" alt="Fortnite" class="d-block tamaño"></a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://www.xbox.com/es-ES/games/gears-of-war-4" target="_blank"><img src="./Imágenes/juegos/gearsofwar.png" alt="Gears of War" class="d-block tamaño"></a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://www.epicgames.com/store/es-ES/p/rocket-league" target="_blank"><img src="./Imágenes/juegos/rocketleague.png" alt="Rocket League" class="d-block tamaño"></a>
-      </div>
-    </div>
-    
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-  
-  <div class="container-fluid mt-3">
-    <h3>Epic Games</h3>
-  </div>
-</div>
 
 
-<div class="d-flex justify-content-around bg-black espacio text-white">
+  <div class="d-flex justify-content-around bg-black espacio text-white">
     <!-- Carousel -->
     <div id="demo2" class="tamaño carousel slide" data-bs-ride="carousel">
-    
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
-        </div>
-        
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="https://www.gog.com/en/game/the_witcher_3_wild_hunt_game_of_the_year_edition" target="_blank"><img src="./Imágenes/juegos/thewitcher.png" alt="The Witcher" class="d-block tamaño"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://www.gog.com/en/game/elder_scrolls_iv_oblivion_game_of_the_year_edition_deluxe_the" target="_blank"><img src="./Imágenes/juegos/scroll.png" alt="The Elder Scroll" class="d-block tamaño"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://www.gog.com/en/game/postal_2" target="_blank"><img src="./Imágenes/juegos/postal2.png" alt="Postal 2" class="d-block tamaño"></a>
-          </div>
-        </div>
-        
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
       </div>
-      
-      <div class="container-fluid mt-3">
-        <h3>GOG</h3>
-      </div>
-    
-      <!-- Carousel -->
-    <div id="demo3" class="tamaño carousel slide" data-bs-ride="carousel">
-    
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://www.gog.com/en/game/the_witcher_3_wild_hunt_game_of_the_year_edition" target="_blank"><img
+              src="./Imágenes/juegos/thewitcher.png" alt="The Witcher" class="d-block tamaño"></a>
         </div>
-        
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="https://www.rockstargames.com/es/games/V" target="_blank"><img src="./Imágenes/juegos/gta5.png" alt="Grand Theft Auto" class="d-block tamaño"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://www.rockstargames.com/es/games/reddeadredemption2" target="_blank"><img src="./Imágenes/juegos/reddead.png" alt="Red Dead" class="d-block tamaño"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://www.rockstargames.com/es/games/manhunt" target="_blank"><img src="./Imágenes/juegos/manhunt.png" alt="ManHunt" class="d-block tamaño"></a>
-          </div>
+        <div class="carousel-item">
+          <a href="https://www.gog.com/en/game/elder_scrolls_iv_oblivion_game_of_the_year_edition_deluxe_the"
+            target="_blank"><img src="./Imágenes/juegos/scroll.png" alt="The Elder Scroll" class="d-block tamaño"></a>
         </div>
-        
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+        <div class="carousel-item">
+          <a href="https://www.gog.com/en/game/postal_2" target="_blank"><img src="./Imágenes/juegos/postal2.png"
+              alt="Postal 2" class="d-block tamaño"></a>
+        </div>
       </div>
-      
-      <div class="container-fluid mt-3">
-        <h3>Rockstar Games</h3>
-      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
 
+    <div class="container-fluid mt-3">
+      <h3>GOG</h3>
+    </div>
 
-    <div class="d-flex justify-content-around bg-black espacio text-white">
-        <!-- Carousel -->
-        <div id="demo4" class="tamaño carousel slide" data-bs-ride="carousel">
-        
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#demo4" data-bs-slide-to="2"></button>
-            </div>
-            
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="https://rocksteadyltd.com/#arkham-knight" target="_blank"><img src="./Imágenes/juegos/batman.png" alt="Batman" class="d-block tamaño"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="https://mortalkombat.com/" target="_blank"><img src="./Imágenes/juegos/mk.png" alt="Mortal Kombat" class="d-block tamaño"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="https://www.injustice.com/" target="_blank"><img src="./Imágenes/juegos/injustice.png" alt="Injustice" class="d-block tamaño"></a>
-              </div>
-            </div>
-            
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo4" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo4" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-          
-          <div class="container-fluid mt-3">
-            <h3>Warner Bros</h3>
-          </div>
-        
-          <!-- Carousel -->
-        <div id="demo5" class="tamaño carousel slide" data-bs-ride="carousel">
-        
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo5" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo5" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#demo5" data-bs-slide-to="2"></button>
-            </div>
-            
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="https://www.origin.com/esp/es-es/store/need-for-speed/need-for-speed-heat/addon/need-for-speed-heat-deluxe-edition-upgrade" target="_blank"><img src="./Imágenes/juegos/nfs.png" alt="Need for Speed" class="d-block tamaño"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="https://www.origin.com/esp/es-es/store/apex/apex" target="_blank"><img src="./Imágenes/juegos/apex.png" alt="Apex" class="d-block tamaño"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="https://www.origin.com/esp/es-es/store/the-sims/the-sims-4" target="_blank"><img src="./Imágenes/juegos/simp.png" alt="Sims" class="d-block tamaño"></a>
-              </div>
-            </div>
-            
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo5" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo5" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-          
-          <div class="container-fluid mt-3">
-            <h3>Origins</h3>
-          </div>
+    <!-- Carousel -->
+    <div id="demo3" class="tamaño carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://www.rockstargames.com/es/games/V" target="_blank"><img src="./Imágenes/juegos/gta5.png"
+              alt="Grand Theft Auto" class="d-block tamaño"></a>
         </div>
+        <div class="carousel-item">
+          <a href="https://www.rockstargames.com/es/games/reddeadredemption2" target="_blank"><img
+              src="./Imágenes/juegos/reddead.png" alt="Red Dead" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.rockstargames.com/es/games/manhunt" target="_blank"><img
+              src="./Imágenes/juegos/manhunt.png" alt="ManHunt" class="d-block tamaño"></a>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <h3>Rockstar Games</h3>
+    </div>
+  </div>
 
 
-        <div class="d-flex justify-content-around bg-black espacio text-white">
-            <!-- Carousel -->
-            <div id="demo6" class="tamaño carousel slide" data-bs-ride="carousel">
-            
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#demo6" data-bs-slide-to="0" class="active"></button>
-                  <button type="button" data-bs-target="#demo6" data-bs-slide-to="1"></button>
-                  <button type="button" data-bs-target="#demo6" data-bs-slide-to="2"></button>
-                </div>
-                
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <a href="https://www.ubisoft.com/es-es/game/rainbow-six/siege" target="_blank"><img src="./Imágenes/juegos/tomclancys.png" alt="Tom Clancy's" class="d-block tamaño"></a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="https://store.ubi.com/es/for-honor-y5s4-battle-bundle/60134e650d253c2e4804c22c.html" target="_blank"><img src="./Imágenes/juegos/forhonor.png" alt="For Honor" class="d-block tamaño"></a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="https://www.ubisoft.com/es-es/game/assassins-creed/valhalla" target="_blank"><img src="./Imágenes/juegos/assasing.png" alt="Assasins Creed" class="d-block tamaño"></a>
-                  </div>
-                </div>
-                
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo6" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo6" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div>
-              
-              <div class="container-fluid mt-3">
-                <h3>Ubisoft</h3>
-              </div>
-            
-              <!-- Carousel -->
-            <div id="demo7" class="tamaño carousel slide" data-bs-ride="carousel">
-            
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#demo7" data-bs-slide-to="0" class="active"></button>
-                  <button type="button" data-bs-target="#demo7" data-bs-slide-to="1"></button>
-                  <button type="button" data-bs-target="#demo7" data-bs-slide-to="2"></button>
-                </div>
-                
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <a href="https://www.leagueoflegends.com/es-es/" target="_blank"><img src="./Imágenes/juegos/lol.png" alt="League of Legends" class="d-block tamaño"></a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="https://playvalorant.com/es-es/" target="_blank"><img src="./Imágenes/juegos/valorant.png" alt="Valorant" class="d-block tamaño"></a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="https://teamfighttactics.leagueoflegends.com/es-es/" target="_blank"><img src="./Imágenes/juegos/tft.png" alt="Team Fight Tactics" class="d-block tamaño"></a>
-                  </div>
-                </div>
-                
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo7" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo7" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div>
-              
-              <div class="container-fluid mt-3">
-                <h3>Riot Games</h3>
-              </div>
-            </div>
- 
+  <div class="d-flex justify-content-around bg-black espacio text-white">
+    <!-- Carousel -->
+    <div id="demo4" class="tamaño carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo4" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://rocksteadyltd.com/#arkham-knight" target="_blank"><img src="./Imágenes/juegos/batman.png"
+              alt="Batman" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://mortalkombat.com/" target="_blank"><img src="./Imágenes/juegos/mk.png" alt="Mortal Kombat"
+              class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.injustice.com/" target="_blank"><img src="./Imágenes/juegos/injustice.png"
+              alt="Injustice" class="d-block tamaño"></a>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo4" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo4" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <h3>Warner Bros</h3>
+    </div>
+
+    <!-- Carousel -->
+    <div id="demo5" class="tamaño carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo5" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo5" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo5" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://www.origin.com/esp/es-es/store/need-for-speed/need-for-speed-heat/addon/need-for-speed-heat-deluxe-edition-upgrade"
+            target="_blank"><img src="./Imágenes/juegos/nfs.png" alt="Need for Speed" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.origin.com/esp/es-es/store/apex/apex" target="_blank"><img
+              src="./Imágenes/juegos/apex.png" alt="Apex" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.origin.com/esp/es-es/store/the-sims/the-sims-4" target="_blank"><img
+              src="./Imágenes/juegos/simp.png" alt="Sims" class="d-block tamaño"></a>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo5" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo5" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <h3>Origins</h3>
+    </div>
+  </div>
+
+
+  <div class="d-flex justify-content-around bg-black espacio text-white">
+    <!-- Carousel -->
+    <div id="demo6" class="tamaño carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo6" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo6" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo6" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://www.ubisoft.com/es-es/game/rainbow-six/siege" target="_blank"><img
+              src="./Imágenes/juegos/tomclancys.png" alt="Tom Clancy's" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://store.ubi.com/es/for-honor-y5s4-battle-bundle/60134e650d253c2e4804c22c.html"
+            target="_blank"><img src="./Imágenes/juegos/forhonor.png" alt="For Honor" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.ubisoft.com/es-es/game/assassins-creed/valhalla" target="_blank"><img
+              src="./Imágenes/juegos/assasing.png" alt="Assasins Creed" class="d-block tamaño"></a>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo6" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo6" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <h3>Ubisoft</h3>
+    </div>
+
+    <!-- Carousel -->
+    <div id="demo7" class="tamaño carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo7" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo7" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo7" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://www.leagueoflegends.com/es-es/" target="_blank"><img src="./Imágenes/juegos/lol.png"
+              alt="League of Legends" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://playvalorant.com/es-es/" target="_blank"><img src="./Imágenes/juegos/valorant.png"
+              alt="Valorant" class="d-block tamaño"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://teamfighttactics.leagueoflegends.com/es-es/" target="_blank"><img
+              src="./Imágenes/juegos/tft.png" alt="Team Fight Tactics" class="d-block tamaño"></a>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo7" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo7" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <h3>Riot Games</h3>
+    </div>
+  </div>
+
   <footer class="w-auto py-4 flex-shrink-0 bg-dark">
     <div class="container py-0 justify-content-around">
       <div class="row gy-4 gx-6 justify-content-center">
         <h5 class="text-white mb-3 text-center">Tus Juegos</h5>
         <div class="col-lg-4 col-md-6 justify-content-center">
-            <h6 class="text-white mb-3">Shooter</h6>
-            <ul class="list-group-horizontal text-muted">
-              <li><a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=spanish" target="_blank">Counter Strike(CSGO)</a></li>
-              <li><a href="https://www.epicgames.com/store/es-ES/p/fortnite" target="_blank">Fortnite</a></li>
-              <li><a href="https://store.steampowered.com/bundle/237/HalfLife_1_Anthology/" target="_blank">Half-Life</a></li>
-              <li><a href="https://store.steampowered.com/app/550/Left_4_Dead_2/" target="_blank">Left 4 Dead</a></li> 
-              <li><a href="https://www.xbox.com/es-ES/games/gears-of-war-4" target="_blank">Gears of War 4</a></li>
-              <li><a href="https://www.origin.com/esp/es-es/store/apex/apex" target="_blank">Apex</a></li>
-              <li><a href="https://www.ubisoft.com/es-es/game/rainbow-six/siege" target="_blank">Tom Clancy's Rainbow Six Siege</a></li>
-              <li><a href="https://playvalorant.com/es-es/" target="_blank">Valorant</a></li>
-            </ul>
+          <h6 class="text-white mb-3">Shooter</h6>
+          <ul class="list-group-horizontal text-muted">
+            <li><a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=spanish"
+                target="_blank">Counter Strike(CSGO)</a></li>
+            <li><a href="https://www.epicgames.com/store/es-ES/p/fortnite" target="_blank">Fortnite</a></li>
+            <li><a href="https://store.steampowered.com/bundle/237/HalfLife_1_Anthology/" target="_blank">Half-Life</a>
+            </li>
+            <li><a href="https://store.steampowered.com/app/550/Left_4_Dead_2/" target="_blank">Left 4 Dead</a></li>
+            <li><a href="https://www.xbox.com/es-ES/games/gears-of-war-4" target="_blank">Gears of War 4</a></li>
+            <li><a href="https://www.origin.com/esp/es-es/store/apex/apex" target="_blank">Apex</a></li>
+            <li><a href="https://www.ubisoft.com/es-es/game/rainbow-six/siege" target="_blank">Tom Clancy's Rainbow Six
+                Siege</a></li>
+            <li><a href="https://playvalorant.com/es-es/" target="_blank">Valorant</a></li>
+          </ul>
         </div>
 
-      <div class="col-lg-4 col-md-6 justify-content-center">
+        <div class="col-lg-4 col-md-6 justify-content-center">
           <h6 class="text-white mb-3">Mundo libre</h6>
           <ul class="list-group-horizontal text-muted">
             <li><a href="https://www.rockstargames.com/es/games/V" target="_blank">Grand Theft Auto V</a></li>
-            <li><a href="https://www.gog.com/en/game/the_witcher_3_wild_hunt_game_of_the_year_edition" target="_blank">The Witcher</a></li>
-            <li><a href="https://www.gog.com/en/game/elder_scrolls_iv_oblivion_game_of_the_year_edition_deluxe_the" target="_blank">The Elder Scroll</a></li>
-            <li><a href="https://www.gog.com/en/game/postal_2" target="_blank">Postal</a></li> 
-            <li><a href="https://www.rockstargames.com/es/games/reddeadredemption2" target="_blank">Red Dead Redemption 2</a></li>
+            <li><a href="https://www.gog.com/en/game/the_witcher_3_wild_hunt_game_of_the_year_edition"
+                target="_blank">The Witcher</a></li>
+            <li><a href="https://www.gog.com/en/game/elder_scrolls_iv_oblivion_game_of_the_year_edition_deluxe_the"
+                target="_blank">The Elder Scroll</a></li>
+            <li><a href="https://www.gog.com/en/game/postal_2" target="_blank">Postal</a></li>
+            <li><a href="https://www.rockstargames.com/es/games/reddeadredemption2" target="_blank">Red Dead Redemption
+                2</a></li>
             <li><a href="https://rocksteadyltd.com/#arkham-knight" target="_blank">Batman</a></li>
-            <li><a href="https://www.ubisoft.com/es-es/game/assassins-creed/valhalla" target="_blank">Assassin's Creed Valhalla</a></li>
+            <li><a href="https://www.ubisoft.com/es-es/game/assassins-creed/valhalla" target="_blank">Assassin's Creed
+                Valhalla</a></li>
           </ul>
-      </div>
+        </div>
 
-      <div class="col-lg-4 col-md-6 justify-content-center">
-        <h6 class="text-white mb-3">Lucha</h6>
-        <ul class="list-group-horizontal text-muted text-decoration-none">
-          <li><a href="https://mortalkombat.com/" target="_blank">Mortal Kombat</a></li>
-          <li><a href="https://www.injustice.com/" target="_blank">Injustice</a></li>
-          <li><a href="https://store.ubi.com/es/for-honor-y5s4-battle-bundle/60134e650d253c2e4804c22c.html" target="_blank">For Honor</a></li>
-        </ul>
-    </div>
+        <div class="col-lg-4 col-md-6 justify-content-center">
+          <h6 class="text-white mb-3">Lucha</h6>
+          <ul class="list-group-horizontal text-muted text-decoration-none">
+            <li><a href="https://mortalkombat.com/" target="_blank">Mortal Kombat</a></li>
+            <li><a href="https://www.injustice.com/" target="_blank">Injustice</a></li>
+            <li><a href="https://store.ubi.com/es/for-honor-y5s4-battle-bundle/60134e650d253c2e4804c22c.html"
+                target="_blank">For Honor</a></li>
+          </ul>
+        </div>
 
-    <div class="col-lg-4 col-md-6 justify-content-center">
-      <h6 class="text-white mb-3">Simulador</h6>
-      <ul class="list-group-horizontal text-muted text-decoration-none">
-        <li><a href="https://www.origin.com/esp/es-es/store/the-sims/the-sims-4" target="_blank">The Sims 4</a></li>
-      </ul>
-  </div>
+        <div class="col-lg-4 col-md-6 justify-content-center">
+          <h6 class="text-white mb-3">Simulador</h6>
+          <ul class="list-group-horizontal text-muted text-decoration-none">
+            <li><a href="https://www.origin.com/esp/es-es/store/the-sims/the-sims-4" target="_blank">The Sims 4</a></li>
+          </ul>
+        </div>
 
-  <div class="col-lg-4 col-md-6 justify-content-center">
-    <h6 class="text-white mb-3">Plataforma</h6>
-    <ul class="list-group-horizontal text-muted text-decoration-none">
-      <li><a href="https://www.rockstargames.com/es/games/manhunt" target="_blank">ManHunt</a></li>
-    </ul>
-  </div>
+        <div class="col-lg-4 col-md-6 justify-content-center">
+          <h6 class="text-white mb-3">Plataforma</h6>
+          <ul class="list-group-horizontal text-muted text-decoration-none">
+            <li><a href="https://www.rockstargames.com/es/games/manhunt" target="_blank">ManHunt</a></li>
+          </ul>
+        </div>
 
-  <div class="col-lg-4 col-md-6 justify-content-center">
-    <h6 class="text-white mb-3">Moba</h6>
-    <ul class="list-group-horizontal text-muted text-decoration-none">
-      <li><a href="https://www.leagueoflegends.com/es-es/" target="_blank">League of Legends</a></li>
-    </ul>
-  </div>
+        <div class="col-lg-4 col-md-6 justify-content-center">
+          <h6 class="text-white mb-3">Moba</h6>
+          <ul class="list-group-horizontal text-muted text-decoration-none">
+            <li><a href="https://www.leagueoflegends.com/es-es/" target="_blank">League of Legends</a></li>
+          </ul>
+        </div>
 
-  <div class="col-lg-4 col-md-6 justify-content-center">
-    <h6 class="text-white mb-3">Estrategia</h6>
-    <ul class="list-group-horizontal text-muted text-decoration-none">
-      <li><a href="https://teamfighttactics.leagueoflegends.com/es-es/" target="_blank">Teamfight Tactics</a></li>
-    </ul>
-  </div>
+        <div class="col-lg-4 col-md-6 justify-content-center">
+          <h6 class="text-white mb-3">Estrategia</h6>
+          <ul class="list-group-horizontal text-muted text-decoration-none">
+            <li><a href="https://teamfighttactics.leagueoflegends.com/es-es/" target="_blank">Teamfight Tactics</a></li>
+          </ul>
+        </div>
 
-  <div class="col-lg-4 col-md-6 justify-content-center">
-    <h6 class="text-white mb-3">Coches</h6>
-    <ul class="list-group-horizontal text-muted text-decoration-none">
-      <li><a href="https://www.origin.com/esp/es-es/store/need-for-speed/need-for-speed-heat/addon/need-for-speed-heat-deluxe-edition-upgrade" target="_blank">Need for Speed</a></li>
-      <li><a href="https://www.epicgames.com/store/es-ES/p/rocket-league" target="_blank">Rocket League</a></li>
-    </ul>
-  </div>
-  <div class="d-flex justify-content-around espacio text-white">
-    <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 justify-content-center">
+          <h6 class="text-white mb-3">Coches</h6>
+          <ul class="list-group-horizontal text-muted text-decoration-none">
+            <li><a
+                href="https://www.origin.com/esp/es-es/store/need-for-speed/need-for-speed-heat/addon/need-for-speed-heat-deluxe-edition-upgrade"
+                target="_blank">Need for Speed</a></li>
+            <li><a href="https://www.epicgames.com/store/es-ES/p/rocket-league" target="_blank">Rocket League</a></li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-around espacio text-white">
+          <div class="col-lg-4 col-md-6">
             <h5 class="h1 text-white">OT.</h5>
             <p class="small text-muted">Ponerte al día ya no es nada complicado si lo tienes a mano.</p>
-            <p class="small text-muted mb-0">© Copyrights. Reservados todos los derechos. <a class="text-primary" href="./aboutMe.html">Por mi</a></p>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <h5 class="text-white mb-3">Información</h5>
-      <p class="small text-muted">Qué mejor forma de estar al dia que poder recibir las notificaciones con lo más nuevo y exclusivo.</p>
-        <form action="./error.html">
-            <div class="input-group mb-3">
-                <input class="form-control" type="email" placeholder="email" aria-label="Recipient's username" aria-describedby="button-addon2" required>
-                <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
-            </div>
-        </form>
-    </div>
-  </div>
+            <p class="small text-muted mb-0">© Copyrights. Reservados todos los derechos. <a class="text-primary"
+                href="./aboutMe.html">Por mi</a></p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-3">Información</h5>
+            <p class="small text-muted">Qué mejor forma de estar al dia que poder recibir las notificaciones con lo más
+              nuevo y exclusivo.</p>
+            <form action="./error.html">
+              <div class="input-group mb-3">
+                <input class="form-control" type="email" placeholder="email" aria-label="Recipient's username"
+                  aria-describedby="button-addon2" required>
+                <button class="btn btn-primary" id="button-addon2" type="button"><i
+                    class="fas fa-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
 
       </div>
     </div>
   </footer>
 </body>
+
 </html>
